@@ -79,14 +79,13 @@
     <style>
         body {
             height: 100dvh;
-            overflow: hidden;
         }
     </style>
 </head>
 
 <body class="bg-background-dark font-display text-white selection:bg-primary selection:text-white">
     <!-- Main Container: Stacks image top, content bottom -->
-    <main class="relative w-full h-[100dvh] flex flex-col overflow-y-auto overflow-x-hidden md:overflow-hidden">
+    <main class="relative w-full h-[100dvh] flex flex-col overflow-y-auto overflow-x-hidden">
         <!-- 1. Background Layer (Blurred Backdrop) -->
         <div class="absolute inset-0 z-0 pointer-events-none">
             <img alt="" class="w-full h-full object-cover blur-3xl opacity-20 scale-110" src="./hero-image.png" />
@@ -130,13 +129,22 @@
                 <!-- CTA Section -->
                 <div class="w-full max-w-[300px] space-y-3 mt-4">
                     <a href="https://t.me/+MoVk9WchsFNjNDY1"
-                        class="w-full bg-primary hover:bg-primary/90 text-white font-semibold text-base py-4 px-6 rounded-full shadow-neon animate-glow transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2 group whitespace-nowrap">
+                        class="w-full bg-primary hover:bg-primary/90 text-white font-semibold text-base py-4 px-6 rounded-full shadow-neon animate-glow transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2 group whitespace-nowrap age-restricted">
                         <span>Join Private Community</span>
                         <svg class="h-5 w-5 flex-shrink-0 transition-transform group-hover:translate-x-1"
                             fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path clip-rule="evenodd"
                                 d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                 fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.fanvue.com/zaraverse"
+                        class="w-full bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold text-base py-4 px-6 rounded-full transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2 group whitespace-nowrap age-restricted">
+                        <span>Exclusive Content</span>
+                        <svg class="h-5 w-5 flex-shrink-0 transition-transform group-hover:translate-x-1" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </a>
                     <!-- Social Proof -->
@@ -149,7 +157,7 @@
                 <!-- Minimal Footer -->
                 <footer class="mt-4 pt-4 border-t border-white/5 w-full flex flex-col items-center gap-3">
                     <div class="flex gap-6 opacity-60 hover:opacity-100 transition-opacity">
-                        <a class="text-white hover:text-primary transition-colors"
+                        <a class="text-white hover:text-primary transition-colors age-restricted"
                             href="https://instagram.com/zarahayleexo" target="_blank">
                             <span class="sr-only">Instagram</span>
                             <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
@@ -157,8 +165,8 @@
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
-                        <a class="text-white hover:text-primary transition-colors" href="https://tiktok.com/@zarahaylee"
-                            target="_blank">
+                        <a class="text-white hover:text-primary transition-colors age-restricted"
+                            href="https://tiktok.com/@zarahaylee" target="_blank">
                             <span class="sr-only">TikTok</span>
                             <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
                                 <path
@@ -167,12 +175,85 @@
                         </a>
                     </div>
                     <p class="text-[10px] text-gray-600 font-light">
-                        © 2026 Zara Digital. All rights reserved.
+                        © 2026 Flow Tools. All rights reserved.
                     </p>
                 </footer>
             </div>
         </div>
     </main>
+    <!-- Age Gate Modal -->
+    <div id="age-gate"
+        class="fixed inset-0 z-[100] hidden items-center justify-center p-6 backdrop-blur-2xl bg-black/90 transition-all duration-500">
+        <div
+            class="bg-zinc-900 border border-white/10 p-8 rounded-[2rem] max-w-sm w-full text-center space-y-6 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+            <div class="h-20 w-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="material-symbols-outlined text-primary text-4xl">explicit</span>
+            </div>
+            <div class="space-y-2">
+                <h2 class="text-2xl font-bold tracking-tight">Age Verification</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    The following content is restricted to users 18+ only. Please confirm your age to continue to the
+                    private sections.
+                </p>
+            </div>
+            <div class="flex flex-col gap-3 pt-2">
+                <button id="confirm-age"
+                    class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-full transition-all transform active:scale-95 shadow-neon">
+                    I am 18+ Enter
+                </button>
+                <button id="decline-age"
+                    class="w-full bg-transparent hover:bg-white/5 text-gray-500 py-3 text-sm transition-all rounded-full border border-transparent hover:border-white/10">
+                    I am under 18
+                </button>
+            </div>
+            <p class="text-[9px] text-gray-600 uppercase tracking-widest">Digital Content Policy Protected</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ageGate = document.getElementById('age-gate');
+            const confirmBtn = document.getElementById('confirm-age');
+            const declineBtn = document.getElementById('decline-age');
+
+            let pendingUrl = '';
+
+            // Check if already confirmed in this session or via local storage
+            const checkAgeVerification = () => {
+                return localStorage.getItem('zara-verse-verified') === 'true';
+            };
+
+            // Using event delegation for better reliability
+            document.body.addEventListener('click', (e) => {
+                const restrictedLink = e.target.closest('.age-restricted');
+
+                if (restrictedLink) {
+                    if (!checkAgeVerification()) {
+                        e.preventDefault();
+                        pendingUrl = restrictedLink.href;
+                        ageGate.classList.remove('hidden');
+                        ageGate.classList.add('flex');
+                        // Prevent background scrolling
+                        document.body.style.overflow = 'hidden';
+                    }
+                }
+            });
+
+            confirmBtn.addEventListener('click', () => {
+                localStorage.setItem('zara-verse-verified', 'true');
+                ageGate.classList.add('hidden');
+                ageGate.classList.remove('flex');
+                document.body.style.overflow = '';
+                if (pendingUrl) {
+                    window.location.href = pendingUrl;
+                }
+            });
+
+            declineBtn.addEventListener('click', () => {
+                window.location.href = 'https://google.com';
+            });
+        });
+    </script>
 </body>
 
 </html>
